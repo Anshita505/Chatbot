@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My AI Chatbot Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px 20px;
+        }
+
+        .welcome-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .welcome-section h2 {
+            color: #333;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .welcome-section p {
+            color: #666;
+            font-size: 1.1em;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+
+        .feature-card p {
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .chat-prompt {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .chat-prompt h3 {
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .chat-prompt p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .header p {
+                font-size: 1em;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Welcome to My AI Assistant</h1>
+            <p>Your intelligent chatbot companion</p>
+        </div>
+
+        <div class="content">
+            <div class="welcome-section">
+                <h2>Hello! I'm Here to Help</h2>
+                <p>I'm an AI-powered assistant ready to answer your questions, provide information, and help you with various tasks. Feel free to start a conversation with me using the chat widget!</p>
+            </div>
+
+            <div class="features">
+                <div class="feature-card">
+                    <h3>🤖 AI Powered</h3>
+                    <p>Advanced artificial intelligence to understand and respond to your queries naturally and accurately.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>💬 Real-time Chat</h3>
+                    <p>Instant responses and smooth conversation flow for the best user experience.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>🌟 24/7 Available</h3>
+                    <p>Always ready to help, anytime you need assistance or have questions.</p>
+                </div>
+            </div>
+
+            <div class="chat-prompt">
+                <h3>Ready to Chat?</h3>
+                <p>Click the chat button to start your conversation with me. I'm here to help!</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 My AI Chatbot. Powered by Google Cloud AI.</p>
+        </div>
+    </div>
+
+    <!-- 
+    ==================================================
+    PASTE YOUR GOOGLE CONVERSATIONAL MESSENGER CODE HERE
+    ==================================================
+    
+    Replace this comment with the code snippet you got from Google Cloud.
+    It should look something like this:
+    
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+    <df-messenger
+      project-id="YOUR_PROJECT_ID"
+      agent-id="YOUR_AGENT_ID"
+      language-code="en"
+      max-query-length="-1">
+      <df-messenger-chat-bubble
+        chat-title="My Chatbot">
+      </df-messenger-chat-bubble>
+    </df-messenger>
+    
+    ==================================================
+    -->
+
+    <!-- Example of where your code goes (REMOVE THIS AND PASTE YOUR ACTUAL CODE) -->
+    <script>
+        // This is just a placeholder message for demonstration
+        // Remove this entire script tag when you paste your actual Google code
+        setTimeout(() => {
+            if (!document.querySelector('df-messenger')) {
+                console.log('Remember to paste your Google Conversational Messenger code!');
+                alert('Don\'t forget to paste your Google Conversational Messenger code in the HTML where indicated!');
+            }
+        }, 2000);
+    </script>
+</body>
+</html>
